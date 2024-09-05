@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            animation: bounce 1s infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        nav {
+            background-color: #1976D2; /* Dark blue color */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #0D47A1; /* Dark blue hover color */
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        #skills p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .skillsList {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .skillsList li {
+            background-color: #2196F3; /* Blue color */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+        }
+
+        .skills-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .skill-img {
+            width: 60px;
+            height: 60px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #1976D2; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media query for mobile */
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            #skills p {
+                font-size: 1em;
+            }
+
+            .skillsList li {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+
+            .skills-images {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Skills</h1>
+</header>
+
+<nav>
+    <a href="aboutme.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container" id="skills">
+    <p>Here are some of the skills I've acquired over the years:</p>
+    <ul class="skillsList">
+        <li>Programming Languages: JavaScript, C++, PHP</li>
+        <li>Web Development: HTML, CSS, React</li>
+        <li>Database Management: SQL</li>
+        <li>Tools: PhpStorm, VS Code, JIRA</li>
+        <li>Soft Skills: Problem-Solving, Team Collaboration, Communication</li>
+    </ul>
+
+    <div class="skills-images">
+        <div class="skill-img" style="background-image: url('html.png');"></div>
+        <div class="skill-img" style="background-image: url('css.png');"></div>
+        <div class="skill-img" style="background-image: url('javascript.webp');"></div>
+        <div class="skill-img" style="background-image: url('reaact.webp');"></div>
+        <div class="skill-img" style="background-image: url('php.png');"></div>
+        <div class="skill-img" style="background-image: url('tailwind.png');"></div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Janis Vintemanis</p>
+</footer>
+
+</body>
+</html>

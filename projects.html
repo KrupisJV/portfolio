@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            animation: bounce 1s infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        nav {
+            background-color: #1976D2; /* Dark blue color */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #0D47A1; /* Dark blue hover color */
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .project-list li {
+            background-color: #2196F3; /* Blue color */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+        }
+
+        footer {
+            background-color: #1976D2; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Media query for mobile */
+        @media only screen and (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .project-list li {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Projects</h1>
+</header>
+
+<nav>
+    <a href="aboutme.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <ul class="project-list">
+        <li>Project 1: Was a group project where I was in charge of creating the frontend of the page</li>
+        <li>Project 2: Was a project called Coffee Time where I had to create a flyer ad in frontend</li>
+        <li>Project 3: Memory game I made with levels that increase difficulty after you beat the last one</li>
+    </ul>
+
+    <div class="social-icons">
+        <button onclick="window.location.href='https://github.com/KrupisJV'"><img src="github.png" alt="GitHub"></button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Janis Vintemanis</p>
+</footer>
+
+</body>
+</html>

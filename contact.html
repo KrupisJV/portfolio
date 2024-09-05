@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            animation: bounce 1s infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        nav {
+            background-color: #1976D2; /* Dark blue color */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #0D47A1; /* Dark blue hover color */
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .contact-info li {
+            background-color: #2196F3; /* Blue color */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Additional styles */
+        .form-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #0D47A1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact</h1>
+</header>
+
+<nav>
+    <a href="aboutme.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <ul class="contact-info">
+        <li>Email: ipa21.j.vintermanis@vtdt.edu.lv</li>
+        <li>Phone: +371 28211744</li>
+        <li>Address: Cēsu novads vaives pagasts Bērziņi</li>
+    </ul>
+    <div class="social-icons">
+        <button onclick="window.location.href='https://www.instagram.com/janis_.v/'"><img src="icon-04-512.webp" alt="Instagram"></button>
+        <button onclick="window.location.href='https://www.facebook.com/janis.vintermanis.3/'"><img src="facebook.webp" alt="Facebook"></button>
+    </div>
+
+    <!-- Contact Form -->
+<!--    <div class="form-container">-->
+<!--        <form method="post" action="send_email.php">-->
+<!--            <label for="name">Name:</label><br>-->
+<!--            <input type="text" id="name" name="name" required><br><br>-->
+
+<!--            <label for="email">Email:</label><br>-->
+<!--            <input type="email" id="email" name="email" required><br><br>-->
+
+<!--            <label for="message">Message:</label><br>-->
+<!--            <textarea id="message" name="message" required></textarea><br><br>-->
+
+<!--            <input type="submit" value="Submit">-->
+<!--        </form>-->
+<!--    </div>-->
+</div>
+
+</body>
+</html>

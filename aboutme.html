@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            animation: bounce 1s infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        nav {
+            background-color: #1976D2; /* Dark blue color */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .hero-text {
+            text-align: center;
+            background-color: #2196F3; /* Blue color */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .aboutmeText {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #1976D2; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>About me </h1>
+</header>
+<nav>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+    <div class="hero-text">
+        <!-- Removed the circle image for the About Me page -->
+        <h1>Janis Vintemanis</h1>
+        <p class="aboutmeText">Welcome to my personal page! I am a 19 year old web developer with a passion for creating stylish and creative websites. I love coding, design, and everything tech-related. In my free time, I enjoy listening to music, going on walks, riding bikes, and swimming.</p>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Janis Vintermanis</p>
+</footer>
+</body>
+</html>

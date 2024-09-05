@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2196F3; /* Blue color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            animation: bounce 1s infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        nav {
+            background-color: #1976D2; /* Dark blue color */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        nav a:hover {
+            background-color: #0D47A1; /* Dark blue hover color */
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        #education p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .educationList {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .educationList li {
+            background-color: #2196F3; /* Blue color */
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+        }
+
+        .education-images {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .education-img {
+            width: 60px;
+            height: 60px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #1976D2; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #333; /* Grey or black color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #555; /* Darker shade when hovered */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Education</h1>
+</header>
+
+<nav>
+    <a href="aboutme.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+<div class="container" id="education">
+    <p>Here is my educational background:</p>
+    <ul class="educationList">
+        <li>Primary education from Rāmuļu pamatskola</li>
+        <li>At the moment I'm attending Vidzemes Design and Technology vocational school</li>
+    </ul>
+
+    <div class="education-images">
+        <div class="education-img" style="background-image: url('university.png');"></div>
+        <div class="education-img" style="background-image: url('online.png');"></div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Janis Vintemanis</p>
+</footer>
+
+<script>
+    function goToHomePage() {
+        window.location.href = "index.html"; // Change "index.html" to your home page URL
+    }
+</script>
+
+</body>
+</html>
